@@ -113,9 +113,9 @@ public class BlurringView extends View {
             int scaledWidth = width / mDownsampleFactor;
             int scaledHeight = height / mDownsampleFactor;
 
-            // The following manipulation is to avoid some RenderScript artifacts at the edge.
-            scaledWidth = scaledWidth - scaledWidth % 4 + 4;
-            scaledHeight = scaledHeight - scaledHeight % 4 + 4;
+            // // The following manipulation is to avoid some RenderScript artifacts at the edge.
+            // scaledWidth = scaledWidth - scaledWidth % 4 + 4;
+            // scaledHeight = scaledHeight - scaledHeight % 4 + 4;
 
             if (mBlurredBitmap == null
                     || mBlurredBitmap.getWidth() != scaledWidth
